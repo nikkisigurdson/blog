@@ -38,6 +38,26 @@
   }
 }
 
+.ltx_document, .wrapper-normal {
+  @include media(">=tablet", "<desktop") {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include media(">=desktop", "<huge") {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include media(">=huge") {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .ltx_document {
   background: white;
   margin-top: 4em;
@@ -47,22 +67,6 @@
   margin-left: 16px;
   margin-right: 16px;
   box-sizing: border-box;
-
-  @include media(">=tablet") {
-    width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @include media(">=desktop") {
-    @include document-width(700px, 900px);
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @include media(">=huge") {
-    @include document-width(700px, 1100px);
-  }
 
   // FIXME: These are set by various things and come from ltx:note in the frontmatter.
   // There is a journal one in the 1803.07574 integration test. acmart.cls also has them

@@ -79,16 +79,8 @@ $fontFamilyMonospace: "Computer Modern Typewriter", monospace;
   font-size: 16px !important;
   line-height: 1.5;
 
-  @include media(">=tablet", "<desktop") {
+  @include media(">=tablet") {
     font-size: 18px !important;
-  }
-
-  @include media(">=desktop", "<huge") {
-    font-size: 20px !important;
-  }
-
-  @include media(">=huge") {
-    font-size: 24px !important;
   }
 }
 
@@ -99,12 +91,8 @@ $fontFamilyMonospace: "Computer Modern Typewriter", monospace;
 
   font-size: 12px !important;
 
-  @include media(">=tablet", "<desktop") {
+  @include media(">=tablet") {
     font-size: 14px !important;
-  }
-
-  @include media(">=desktop") {
-    font-size: 16px !important;
   }
 }
 
@@ -114,16 +102,8 @@ $fontFamilyMonospace: "Computer Modern Typewriter", monospace;
   font-size: 14px !important;
   line-height: 1.5;
 
-  @include media(">=tablet", "<desktop") {
+  @include media(">=tablet") {
     font-size: 16px !important;
-  }
-
-  @include media(">=desktop", "<huge") {
-    font-size: 18px !important;
-  }
-
-  @include media(">=huge") {
-    font-size: 20px !important;
   }
 }
 
@@ -138,12 +118,8 @@ $fontFamilyMonospace: "Computer Modern Typewriter", monospace;
   font-weight: 400;
   text-transform: uppercase;
 
-  @include media(">=tablet", "<desktop") {
+  @include media(">=tablet") {
     font-size: 18px !important;
-  }
-
-  @include media(">=desktop") {
-    font-size: 20px !important;
   }
 }
 
@@ -152,12 +128,8 @@ $fontFamilyMonospace: "Computer Modern Typewriter", monospace;
 
   font-size: 12px !important;
 
-  @include media(">=tablet", "<desktop") {
+  @include media(">=tablet") {
     font-size: 14px !important;
-  }
-
-  @include media(">=desktop") {
-    font-size: 16px !important;
   }
 }
 
@@ -165,11 +137,7 @@ $fontFamilyMonospace: "Computer Modern Typewriter", monospace;
   font-family: $fontFamilyHelvetica;
   font-size: 12px !important;
 
-  @include media(">=tablet", "<desktop") {
+  @include media(">=tablet") {
     font-size: 14px !important;
-  }
-
-  @include media(">=desktop") {
-    font-size: 16px !important;
   }
 }
