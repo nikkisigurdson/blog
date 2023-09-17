@@ -1,0 +1,81 @@
+---
+title: "LaTeX Test"
+layout: post
+date: 2023-01-01 22:44
+image: /assets/images/markdown.jpg
+tag:
+- markdown
+- elements
+category: blog
+description: Test of latex
+star: false
+---
+\documentclass{article}
+\usepackage{amsmath}
+
+\author{Due Friday, November 5, 2021}
+\date{Math 205}
+
+\renewcommand \thepage {}
+
+\hyphenpenalty 2000
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+
+\item There are five green balls, four yellow balls, and two blue balls in a bin.  You draw two of them out at random.
+\begin{enumerate}
+\item Calculate the probability that both are green, the probability that just one is green, and the probability that neither one is green.
+\item Write a program to simulate the experiment 10,000 times, count how many times each outcome occurs, and report the result.  You'll want to start with
+\begin{verbatim}
+from random import *
+L = ["G","G","G","G","G","Y","Y","Y","Y","B","B"]
+\end{verbatim}
+or if you're feeling fancy, that second line could be
+\begin{verbatim}
+L = ["G"]*5 + ["Y"]*4 + ["B"]*2
+\end{verbatim}
+To pick two of them at random, you could either do \verb|shuffle(L)| to shuffle the list and then examine \verb|L[0]| and \verb|L[1]|, or you could to \verb|M = sample(L,2)| and then examine \verb|M[0]| and \verb|M[1]|.
+
+\item If your calculation and your program don't agree, go back and correct the calculation, or the program, or both.
+\end{enumerate}
+
+\item You draw two cards at random from a standard deck.
+\begin{enumerate}
+\item Calculate the probability that they have the same rank (ace, 2, 3, \dots, 10, jack, queen, king), and the probability that they have the same suit (clubs, diamonds, hearts, spades).
+\item Write a program to simulate the experiment 10,000 times and report the result.  For the suit question, you can ignore the ranks and just start with something like
+\begin{verbatim}
+L = ["C","D","H","S"]*13
+\end{verbatim}
+Similarly, for the rank question you can ignore the suits.
+\item If your calculation and your program don't agree, go back and correct the calculation, or the program, or both.
+\end{enumerate}
+\pagebreak
+
+\item You roll two six-sided dice.
+\begin{enumerate}
+\item Calculate the probability that they add up to 9 or more.
+\item Write a program to simulate the experiment 10,000 times and report the result.  To get a random integer between 1 and 6, you can use either \verb|randrange(1,7)| or \verb|randint(1,6)|.
+\item If your calculation and your program don't agree, go back and correct the calculation, or the program, or both.
+\item Challenge: What if it's three dice adding up to at least 15?
+\end{enumerate}
+
+\item You flip a coin ten times.
+\begin{enumerate}
+\item Calculate the probability that it comes up heads 7 or more times.
+\item Write a program to simulate the experiment 10,000 times and report the result.  You could do \verb|L = ["H","T"]| and then use \verb|choice(L)| to get a random choice, but it would be slicker to let 0 represent tails, let 1 represent heads, and add up the random choices to get the number of heads.
+\item If your calculation and your program don't agree, go back and correct the calculation, or the program, or both.
+\end{enumerate}
+
+\item Optional challenge problem: random walks.  A bug starts at the origin on a number line.  It flips a coin to decide whether to move one unit left or right.  It does this many times.
+\begin{enumerate}
+\item What is the probability that after 20 steps, the bug is more than 10 units away from the origin?  Don't try to compute this by hand, but write a program to approximate the answer.
+\item What is the average distance that the bug will end up at after 20 steps?  Again write a program to approximate the answer.
+\item What if the bug walks randomly in the $xy$-plane, each time moving either left, right, up, or down?  Do you expect your answers to (a) and (b) to get bigger or smaller?  Write a program to see if you were right.
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
