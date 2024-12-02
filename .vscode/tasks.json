@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "kill-jekyll",
+        "type": "shell",
+        "command": "docker ps -q --filter name=jekyll-server | grep -q . && docker stop jekyll-server || exit 0",
+        "presentation": {
+          "reveal": "never",
+          "panel": "dedicated"
+        }
+      }
+    ]
+  }

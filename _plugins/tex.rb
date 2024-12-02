@@ -11,6 +11,10 @@ module Jekyll
       '.html'
     end
 
+    def running_in_docker?
+      File.exist?('/.dockerenv')
+    end
+
     def convert(content)
       # Calculate a unique hash for the content of the .tex file
       content_hash = Digest::MD5.hexdigest(content)
@@ -23,20 +27,21 @@ module Jekyll
         return File.read(cached_html_path)
       else
         # If no cached version exists, proceed with the conversion
-
-        # Temporarily write the content to a temporary file
         temp_input_path = File.join(Dir.tmpdir, "#{SecureRandom.uuid}.tex")
         File.write(temp_input_path, content)
 
-        # Define the Docker command to run engrafo and cat the HTML output
-        docker_command = "sudo docker run -v #{Shellwords.escape(temp_input_path)}:/workdir/input.tex -w /workdir arxivvanity/engrafo sh -c 'engrafo input.tex /tmp --javascript /assets/engrafo.js --css \"data:text/css;base64,\" >&2 && cat /tmp/index.html'"
-
-        # Execute the Docker command and capture the HTML output
-        html_output = `#{docker_command}`
-
-        # Check for errors in the Docker command execution
-        unless $?.success?
-          raise "Error running engrafo:\n#{html_output}"
+        if running_in_docker?
+          # Run engrafo directly since we're already in the container
+          system("engrafo #{temp_input_path} /tmp --javascript /assets/engrafo.js --css \"data:text/css;base64,\"")
+          html_output = File.read('/tmp/index.html')
+        else
+          # Use Docker command when running locally
+          docker_command = "sudo docker run -v #{Shellwords.escape(temp_input_path)}:/workdir/input.tex -w /workdir arxivvanity/engrafo sh -c 'engrafo input.tex /tmp --javascript /assets/engrafo.js --css \"data:text/css;base64,\" >&2 && cat /tmp/index.html'"
+          html_output = `#{docker_command}`
+          
+          unless $?.success?
+            raise "Error running engrafo:\n#{html_output}"
+          end
         end
 
         # Clean up the temporary input file

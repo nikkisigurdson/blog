@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Jekyll Server",
+        "type": "node",
+        "request": "launch",
+        "preLaunchTask": "kill-jekyll",
+        "runtimeExecutable": "docker",
+        "runtimeArgs": [
+          "run",
+          "--rm",
+          "--name=jekyll-server",
+          "-v",
+          "${workspaceFolder}:/site",
+          "-p",
+          "4000:4000",
+          "jekyll-engrafo",
+          "bundle",
+          "exec",
+          "jekyll",
+          "serve",
+          "--host",
+          "0.0.0.0",
+          "--livereload"
+        ],
+        "console": "integratedTerminal"
+      }
+    ]
+  }
