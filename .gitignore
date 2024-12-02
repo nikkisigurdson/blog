@@ -4,3 +4,6 @@ _site
 Gemfile.lock
 .bundle
 /vendor/
+_post-templates/
+_post-drafts/
+tutorial.md
