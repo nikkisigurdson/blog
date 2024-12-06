@@ -7,9 +7,11 @@ layout: page
 
 I'm Nikki, a theoretical computer scientist and cryptographer.
 
-I currently work full-time as a cryptography researcher at Flashbots where I study MEV in blockchain systems from a cryptography and private-based perspective. What does that mean? There are some protocol-design challenges related to MEV which would be ideally solved using cryptography-based solutions, but we haven’t discovered satisfactory solutions yet. Our mid-term approaches to these challenges are centered around the use of TEE technology, which allow us to bypass the mathematical barriers of establishing provably-private protocols that satisfy our use cases, and instead achieve those guarantees via hardware-based assumptions. As a long-term goal however, we aim to overcome these barriers via provably private (cryptographic) solutions.
+I currently work full-time as a cryptography researcher at Flashbots where I study blockchain systems from a cryptography and privacy-based perspective.
 
-Towards this, in my own research I study MEV systems, both in practice today and via theoretical models, to assess and design new solutions for long-term system sustainability and growth.
+There are some protocol-design challenges related to MEV which would be ideally solved using cryptography-based solutions, but we haven’t discovered satisfactory solutions yet. Our mid-term approaches to these challenges are centered around the use of TEE technology, which allow us to bypass the mathematical barriers of establishing provably-private protocols that satisfy our use cases, and instead achieve those guarantees via hardware-based assumptions. As a long-term goal however, we aim to overcome these barriers via provably private (cryptographic) solutions.
+
+Towards this, in my own research I study Blockchain MEV systems, both in practice today and via theoretical models, to assess and design new solutions for long-term system sustainability and growth.
 
 I enjoy cross-disciplinary work and often explore related fields of theoretical computer science and mathematics for ideas that might inspire bold new directions for MEV research. I am a proponent of open research, a philosophy of practice that aims to make research more transparent, accessible, and collaborative.
 
