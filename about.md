@@ -15,7 +15,7 @@ I enjoy cross-disciplinary work and often explore related fields of theoretical 
 
 <h2>Projects</h2>
 <ul class="skill-list">
-	<li>Countersign: A New Ultra-Private P2P Authentication</li>
+	<li>Countersign: A New Ultra-Private Authentication Protocol for P2P Networks</li>
 </ul>
 
 <h2>Current Research Interests</h2>
