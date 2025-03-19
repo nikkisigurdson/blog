@@ -5,15 +5,18 @@ layout: page
 
 <h2>About Me</h2>
 
-I'm Nikki, a theoretical computer scientist and cryptographer.
+<p>
+	I'm Nikki, a theoretical computer scientist and cryptographer.
 
-I currently work full-time as a cryptography researcher at Flashbots where I study blockchain systems from a cryptography and privacy-based perspective.
+    Right now, I'm interested in blockchain systems from cryptographic and privacy-based perspectives.
 
-There are some protocol-design challenges related to MEV which would be ideally solved using cryptography-based solutions, but we haven’t discovered satisfactory solutions yet. Our mid-term approaches to these challenges are centered around the use of TEE technology, which allow us to bypass the mathematical barriers of establishing provably-private protocols that satisfy our use cases, and instead achieve those guarantees via hardware-based assumptions. As a long-term goal however, we aim to overcome these barriers via provably private (cryptographic) solutions.
+    There are some protocol-design challenges related to MEV which would be ideally solved using cryptography-based solutions, but no satisfactory solutions have been discovered yet. Mid-term approaches to these challenges currently often center around the use of TEE technology, which allow us to bypass the mathematical barriers of establishing provably-private protocols that satisfy our use cases, and achieve those guarantees via hardware-based assumptions instead. As a long-term goal however, the ideal case will be to overcome these barriers via clean (yet to be discovered) provably-private solutions.
 
-Towards this, in my own research I study Blockchain MEV systems, both in practice today and via theoretical models, to assess and design new solutions for long-term system sustainability and growth.
+    Towards this, I study Blockchain and other MEV systems, both in practice today and via theoretical models, to assess and design new solutions for long-term system sustainability and growth.
 
-I enjoy cross-disciplinary work and often explore related fields of theoretical computer science and mathematics for ideas that might inspire bold new directions for MEV research. I am a proponent of open research, a philosophy of practice that aims to make research more transparent, accessible, and collaborative.
+    I enjoy cross-disciplinary work and often explore related fields of theoretical computer science and mathematics for ideas that might inspire bold new directions. I am a proponent of open research, a philosophy of practice that aims to make research more transparent, accessible, and collaborative.
+
+</p>
 
 <h2>Projects</h2>
 <ul class="skill-list">
@@ -38,7 +41,7 @@ I enjoy cross-disciplinary work and often explore related fields of theoretical 
 	<li>Homotopy Type Theory & Univalent Foundations</li>
 	<li>Independence-Friendly (IF) Logic</li>
 	<li>Hintikka's Game-theoretical Interpretations of First-Order Logic</li>
-	<li>Applications of Universal Composability Framework outside of Cryptography</li>
+	<li>Applications of Universal Composability Framework in and outside of Cryptography</li>
 </ul>
 
 <!---
