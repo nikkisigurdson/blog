@@ -52,6 +52,7 @@ WORKDIR /site
 
 # Copy Gemfile and install dependencies if they exist
 COPY Gemfile* ./
-RUN if [ -f Gemfile ]; then bundle install; fi
+RUN bundle config set force_ruby_platform true
+RUN bundle install
 
 # The site content will be mounted at runtime
