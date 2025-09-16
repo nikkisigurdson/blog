@@ -8,11 +8,7 @@ layout: page
 <p>
 	I'm Nikki, a theoretical computer scientist and cryptographer.
 
-    Right now, I'm interested in blockchain systems from cryptographic and privacy-based perspectives.
-
-    There are some protocol-design challenges related to MEV which would be ideally solved using cryptography-based solutions, but no satisfactory solutions have been discovered yet. Mid-term approaches to these challenges currently often center around the use of TEE technology, which allow us to bypass the mathematical barriers of establishing provably-private protocols that satisfy our use cases, and achieve those guarantees via hardware-based assumptions instead. As a long-term goal however, the ideal case will be to overcome these barriers via clean (yet to be discovered) provably-private solutions.
-
-    Towards this, I study Blockchain and other MEV systems, both in practice today and via theoretical models, to assess and design new solutions for long-term system sustainability and growth.
+    I focus on research in blockchain systems from cryptographic and privacy-based perspectives. I'm especially interested in strategic scientific communications management.
 
     I enjoy cross-disciplinary work and often explore related fields of theoretical computer science and mathematics for ideas that might inspire bold new directions. I am a proponent of open research, a philosophy of practice that aims to make research more transparent, accessible, and collaborative.
 
@@ -20,16 +16,18 @@ layout: page
 
 <h2>Projects</h2>
 <ul class="skill-list">
-	<li>Countersign: A New Ultra-Private Authentication Protocol for P2P Networks</li>
+	<li> Student perspectives on mathematics in computer science. In Proceedings of the 17th Koli Calling International Conference on Computing Education Research (Koli Calling '17). </li>
+	<li> An Exploration of Grit in a CS1 Context. In Proceedings of the 18th Koli Calling International Conference on Computing Education Research (Koli Calling '18). </li>
+	<li> A Survey-based Exploration of Computer Science Student Perspectives on Mathematics. In Proceedings of the 50th ACM Technical Symposium on Computer Science Education (SIGCSE '19). </li>
+	<li> Countersign: Privacy-Preserving Authentication for P2P Networks. (Pre-print available soon.) </li>
 </ul>
 
 <h2>Current Research Interests</h2>
 
 <ul class="skill-list">
-	<li>Cryptosystem Design & Analysis</li>
-	<li>Proof Systems</li>
-	<li>Witness Encryption</li>
-	<li>Fully Homomorphic Encryption</li>
+	<li> The Universal Composability Framework </li>
+	<li> Cryptographic Idealized Models </li>
+	<li> Proof Systems </li>
 </ul>
 
 <h2>Other General Interests</h2>
@@ -42,6 +40,8 @@ layout: page
 	<li>Independence-Friendly (IF) Logic</li>
 	<li>Hintikka's Game-theoretical Interpretations of First-Order Logic</li>
 	<li>Applications of Universal Composability Framework in and outside of Cryptography</li>
+	<li>Witness Encryption</li>
+	<li>Fully Homomorphic Encryption</li>
 </ul>
 
 <!---
