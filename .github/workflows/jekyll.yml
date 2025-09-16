@@ -1,29 +1,33 @@
 name: Build and Deploy Jekyll site
 
 on:
-  push:
-    branches: [ main ]  # or whatever your default branch is named
-  pull_request:
-    branches: [ main ]
+    push:
+        branches: [main] # or whatever your default branch is named
+    pull_request:
+        branches: [main]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v2
+        steps:
+            - uses: actions/checkout@v2
 
-    - name: Build Jekyll site
-      run: |
-        docker build -t jekyll-engrafo -f Dockerfile .
-        docker run --rm \
-          -v ${{ github.workspace }}:/site \
-          jekyll-engrafo \
-          bundle exec jekyll build
+            - name: Pull image from Docker Hub
+              run: |
+                  docker pull arxivvanity/engrafo:latest
 
-    - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/main'  # only deploy on main branch
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+            - name: Build Jekyll site
+              run: |
+                  docker build -t jekyll-engrafo -f Dockerfile .
+                  docker run --rm \
+                    -v ${{ github.workspace }}:/site \
+                    jekyll-engrafo \
+                    bundle exec jekyll build
+
+            - name: Deploy to GitHub Pages
+              if: github.ref == 'refs/heads/main' # only deploy on main branch
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./_site
