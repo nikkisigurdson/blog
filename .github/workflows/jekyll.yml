@@ -15,7 +15,7 @@ jobs:
 
             - name: Pull image from Docker Hub
               run: |
-                  docker pull arxivvanity/engrafo:latest
+                  docker pull your-username/your-image:latest
 
             - name: Build Jekyll site
               run: |
@@ -24,6 +24,9 @@ jobs:
                     -v ${{ github.workspace }}:/site \
                     jekyll-engrafo \
                     bundle exec jekyll build
+
+            - name: Create CNAME file
+              run: echo "nikkisigurdson.com" > ./_site/CNAME
 
             - name: Deploy to GitHub Pages
               if: github.ref == 'refs/heads/main' # only deploy on main branch
