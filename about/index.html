@@ -13,8 +13,8 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="About" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Research in cryptography, theoretical computer science, and MEV" />
-<meta property="og:description" content="Research in cryptography, theoretical computer science, and MEV" />
+<meta name="description" content="Research in blockchain, cryptography, and theoretical computer science." />
+<meta property="og:description" content="Research in blockchain, cryptography, and theoretical computer science." />
 <link rel="canonical" href="https://nikkisigurdson.com/about/" />
 <meta property="og:url" content="https://nikkisigurdson.com/about/" />
 <meta property="og:site_name" content="Nikki’s Blog" />
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="About" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Research in cryptography, theoretical computer science, and MEV","headline":"About","name":"Nikki’s Blog","url":"https://nikkisigurdson.com/about/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Research in blockchain, cryptography, and theoretical computer science.","headline":"About","name":"Nikki’s Blog","url":"https://nikkisigurdson.com/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -573,12 +573,12 @@ template {
 }
 
 body, html {
-  font-size: 62.5%;
+  font-size: 75%;
 }
 
 body {
   font: 16px "Times New Roman", serif;
-  color: #666;
+  color: #444;
   background: #fff;
 }
 
@@ -609,14 +609,14 @@ h4 {
 }
 
 a {
-  color: #54a24e;
+  color: #4c9246;
   text-decoration: underline;
   font-weight: 300;
 }
 
 p {
   line-height: 1.7;
-  color: #666;
+  color: #444;
   font-weight: 300;
   margin-bottom: 20px;
   letter-spacing: 0.4px;
@@ -636,7 +636,7 @@ ul li,
 ol li {
   line-height: 2.4rem;
   font-weight: 300;
-  color: #666;
+  color: #444;
 }
 
 img,
@@ -740,7 +740,7 @@ pre {
   transition: all ease-in-out 0.2s;
 }
 .credits-dropdown summary:hover {
-  color: #54a24e;
+  color: #4c9246;
 }
 .credits-dropdown .credits-content {
   margin-top: 10px;
@@ -851,7 +851,7 @@ pre {
 .home > .list > .item:hover > .url > .title,
 .blog > .list > .item:hover > .url > .title,
 .projects > .list > .item:hover > .url > .title {
-  color: #54a24e;
+  color: #4c9246;
 }
 .home > .list aside,
 .blog > .list aside,
@@ -869,7 +869,7 @@ pre {
 .home > .list .item:hover .url aside,
 .blog > .list .item:hover .url aside,
 .projects > .list .item:hover .url aside {
-  color: #666;
+  color: #444;
 }
 
 .blog > .list > .item > .url > .title,
@@ -926,7 +926,7 @@ pre {
   border-radius: 3px;
   font-size: 1.1rem;
   background: #ededed;
-  color: #666;
+  color: #444;
   letter-spacing: 1px;
   margin: 3px 1px;
   text-decoration: none;
@@ -997,7 +997,7 @@ pre {
   border-radius: 3px;
   font-size: 1.3rem;
   background: #ededed;
-  color: #666;
+  color: #444;
   letter-spacing: 1px;
   margin: 0 0.5rem 1rem;
   text-decoration: none;
@@ -1027,7 +1027,7 @@ pre {
   font-size: 1.6rem;
 }
 .tag-list > .list > .item:hover > .url > .title {
-  color: #54a24e;
+  color: #4c9246;
 }
 .tag-list > .list aside {
   position: relative;
@@ -1042,7 +1042,7 @@ pre {
   font-size: 1.6rem;
 }
 .tag-list > .list .item:hover .url aside {
-  color: #666;
+  color: #444;
 }
 
 .author {
@@ -1183,7 +1183,7 @@ pre {
   left: 2px;
 }
 .footer-main > .link > .icon:hover {
-  fill: #54a24e !important;
+  fill: #4c9246 !important;
 }
 .footer-main > .extra {
   color: #aaa;
@@ -1292,7 +1292,7 @@ pre {
   width: 70px;
 }
 .nav-home > .list > .item > .link:hover {
-  color: #666;
+  color: #444;
 }
 
 .evidence {
@@ -1538,7 +1538,7 @@ pre {
   color: #000;
 }
 .social-links > .link:hover > svg {
-  color: #54a24e;
+  color: #4c9246;
 }
 .social-links > svg {
   transition: all ease-in-out 0.2s;
@@ -1567,8 +1567,6 @@ body {
 
 .ltx_page_main {
   text-rendering: optimizeLegibility;
-  /* Hack to simulate run-in! put class="ltx_runin" on a title or tag
-     for it to run-into the following text. */
 }
 .ltx_page_main .ltx_ERROR,
 .ltx_page_main .ltx_missing,
@@ -1673,12 +1671,14 @@ body {
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0 0 1em 0;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_abstract .ltx_title_abstract {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_abstract .ltx_title_abstract {
+  margin: 0 0 1em 0;
 }
 .ltx_page_main .ltx_abstract .ltx_note .ltx_note_outer {
   width: 160px;
@@ -1775,12 +1775,14 @@ body {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  margin-bottom: 1em;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_authors {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_authors {
+  margin-bottom: 1em;
 }
 .ltx_page_main .ltx_authors .ltx_personname {
   font-weight: bold;
@@ -1870,7 +1872,6 @@ body {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  margin: 0 0 2em 0;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_bibliography .ltx_bibitem {
@@ -1879,6 +1880,9 @@ body {
 }
 .ltx_page_main .ltx_bibliography .ltx_bibitem * {
   font-size: inherit !important;
+}
+.ltx_page_main .ltx_bibliography .ltx_bibitem {
+  margin: 0 0 2em 0;
 }
 .ltx_page_main .ltx_bibliography .ltx_bibitem .ltx_tag_bibitem + .ltx_bibblock {
   font-style: italic;
@@ -2029,25 +2033,27 @@ body {
   font-style: italic;
   font-display: "auto";
 }
-.ltx_page_main .ltx_classification {
-  font-family: "Computer Modern Serif", Georgia, serif;
-  font-size: 16px !important;
-  line-height: 1.5;
-}
 .ltx_page_main .ltx_classification .ltx_title_classification {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  font-weight: bold;
-  margin: 0;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_classification .ltx_title_classification {
     font-size: 18px !important;
   }
 }
+.ltx_page_main .ltx_classification .ltx_title_classification {
+  font-weight: bold;
+  margin: 0;
+}
 .ltx_page_main .ltx_classification .ltx_title_classification::first-letter {
   text-transform: uppercase;
+}
+.ltx_page_main .ltx_classification {
+  font-family: "Computer Modern Serif", Georgia, serif;
+  font-size: 16px !important;
+  line-height: 1.5;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_classification {
@@ -2114,13 +2120,15 @@ body {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  font-style: italic;
-  margin-bottom: 1em;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_date {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_date {
+  font-style: italic;
+  margin-bottom: 1em;
 }
 @font-face {
   font-family: "Computer Modern Serif";
@@ -2264,12 +2272,14 @@ body {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  width: 100%;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_equation.ltx_eqn_table {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_equation.ltx_eqn_table {
+  width: 100%;
 }
 .ltx_page_main .ltx_equationgroup {
   width: 100%;
@@ -2635,14 +2645,16 @@ body {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  margin: 2em 0;
-  padding: 0;
-  list-style-type: none;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_index .ltx_indexlist {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_index .ltx_indexlist {
+  margin: 2em 0;
+  padding: 0;
+  list-style-type: none;
 }
 @font-face {
   font-family: "Computer Modern Serif";
@@ -2771,22 +2783,24 @@ body {
   font-style: italic;
   font-display: "auto";
 }
-.ltx_page_main .ltx_keywords {
-  font-family: "Computer Modern Serif", Georgia, serif;
-  font-size: 16px !important;
-  line-height: 1.5;
-}
 .ltx_page_main .ltx_keywords .ltx_title_keywords {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  font-weight: bold;
-  margin: 0;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_keywords .ltx_title_keywords {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_keywords .ltx_title_keywords {
+  font-weight: bold;
+  margin: 0;
+}
+.ltx_page_main .ltx_keywords {
+  font-family: "Computer Modern Serif", Georgia, serif;
+  font-size: 16px !important;
+  line-height: 1.5;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_keywords {
@@ -2853,16 +2867,18 @@ body {
   font-family: "Computer Modern Typewriter", monospace;
   font-size: 14px !important;
   line-height: 1.5;
-  padding-left: 3em;
-  margin: 4rem 0;
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_listing {
     font-size: 16px !important;
   }
+}
+.ltx_page_main .ltx_listing {
+  padding-left: 3em;
+  margin: 4rem 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .ltx_page_main .ltx_listing .ltx_listing_data {
   display: none;
@@ -2953,6 +2969,13 @@ body {
 .ltx_page_main .ltx_note .ltx_note_outer {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 12px !important;
+}
+@media (min-width: 768px) {
+  .ltx_page_main .ltx_note .ltx_note_outer {
+    font-size: 14px !important;
+  }
+}
+.ltx_page_main .ltx_note .ltx_note_outer {
   float: right;
   clear: right;
   position: relative;
@@ -2963,11 +2986,6 @@ body {
   text-indent: 0;
   font-weight: normal;
   font-style: normal;
-}
-@media (min-width: 768px) {
-  .ltx_page_main .ltx_note .ltx_note_outer {
-    font-size: 14px !important;
-  }
 }
 .ltx_page_main .ltx_note .ltx_note_outer .ltx_note_mark {
   display: block;
@@ -3084,6 +3102,10 @@ body {
 .ltx_page_main .ltx_red {
   color: red;
 }
+.ltx_page_main {
+  /* Hack to simulate run-in! put class="ltx_runin" on a title or tag
+     for it to run-into the following text. */
+}
 .ltx_page_main .ltx_runin {
   display: inline;
 }
@@ -3186,13 +3208,15 @@ body {
 .ltx_page_main .ltx_tabular {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 12px !important;
-  border-collapse: collapse;
-  margin: 2em 0;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_tabular {
     font-size: 14px !important;
   }
+}
+.ltx_page_main .ltx_tabular {
+  border-collapse: collapse;
+  margin: 2em 0;
 }
 .ltx_page_main .ltx_tabular .ltx_td,
 .ltx_page_main .ltx_tabular .ltx_th {
@@ -3369,10 +3393,6 @@ body {
   font-style: italic;
   font-display: "auto";
 }
-.ltx_page_main .ltx_theorem {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
 .ltx_page_main .ltx_theorem .ltx_title_theorem {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
@@ -3382,6 +3402,10 @@ body {
   .ltx_page_main .ltx_theorem .ltx_title_theorem {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_theorem {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 @font-face {
   font-family: "Computer Modern Serif";
@@ -3448,12 +3472,14 @@ body {
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 4em;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_title_section, .ltx_page_main .ltx_title_bibliography, .ltx_page_main .ltx_title_appendix {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_title_section, .ltx_page_main .ltx_title_bibliography, .ltx_page_main .ltx_title_appendix {
+  margin-bottom: 4em;
 }
 .ltx_page_main .ltx_title_section .ltx_tag_section, .ltx_page_main .ltx_title_bibliography .ltx_tag_section, .ltx_page_main .ltx_title_appendix .ltx_tag_section {
   display: inline-block;
@@ -3527,12 +3553,14 @@ body {
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 4em;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_title_section, .ltx_page_main .ltx_title_bibliography, .ltx_page_main .ltx_title_appendix {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_title_section, .ltx_page_main .ltx_title_bibliography, .ltx_page_main .ltx_title_appendix {
+  margin-bottom: 4em;
 }
 .ltx_page_main .ltx_title_section .ltx_tag_section, .ltx_page_main .ltx_title_bibliography .ltx_tag_section, .ltx_page_main .ltx_title_appendix .ltx_tag_section {
   display: inline-block;
@@ -3678,15 +3706,17 @@ body {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  font-weight: bold;
-  margin: 0;
-  margin-right: 0.75em;
-  float: left;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_title_paragraph {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_title_paragraph {
+  font-weight: bold;
+  margin: 0;
+  margin-right: 0.75em;
+  float: left;
 }
 @font-face {
   font-family: "Computer Modern Serif";
@@ -3753,12 +3783,14 @@ body {
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 4em;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_title_section, .ltx_page_main .ltx_title_appendix, .ltx_page_main .ltx_title_bibliography {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_title_section, .ltx_page_main .ltx_title_appendix, .ltx_page_main .ltx_title_bibliography {
+  margin-bottom: 4em;
 }
 .ltx_page_main .ltx_title_section .ltx_tag_section, .ltx_page_main .ltx_title_appendix .ltx_tag_section, .ltx_page_main .ltx_title_bibliography .ltx_tag_section {
   display: inline-block;
@@ -3824,15 +3856,17 @@ body {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  font-weight: bold;
-  margin: 0;
-  margin-right: 0.75em;
-  float: left;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_title_subparagraph {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_title_subparagraph {
+  font-weight: bold;
+  margin: 0;
+  margin-right: 0.75em;
+  float: left;
 }
 @font-face {
   font-family: "Computer Modern Serif";
@@ -3899,18 +3933,22 @@ body {
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 12px !important;
-  margin-bottom: 1.5em;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_title_subsection {
     font-size: 18px !important;
   }
 }
+.ltx_page_main .ltx_title_subsection {
+  font-size: 12px !important;
+}
 @media (min-width: 768px) {
   .ltx_page_main .ltx_title_subsection {
     font-size: 14px !important;
   }
+}
+.ltx_page_main .ltx_title_subsection {
+  margin-bottom: 1.5em;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_title_subsection {
@@ -3981,13 +4019,15 @@ body {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  font-weight: bold;
-  margin: 0 0 1em 0;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_title_subsubsection {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_title_subsubsection {
+  font-weight: bold;
+  margin: 0 0 1em 0;
 }
 .ltx_page_main .ltx_title_subsubsection .ltx_tag_subsubsection {
   display: none;
@@ -4067,14 +4107,16 @@ body {
   font-family: "Computer Modern Serif", Georgia, serif;
   font-size: 16px !important;
   line-height: 1.5;
-  margin: 2em 0;
-  padding: 0;
-  list-style-type: none;
 }
 @media (min-width: 768px) {
   .ltx_page_main .ltx_TOC .ltx_toclist {
     font-size: 18px !important;
   }
+}
+.ltx_page_main .ltx_TOC .ltx_toclist {
+  margin: 2em 0;
+  padding: 0;
+  list-style-type: none;
 }
 @font-face {
   font-family: "Computer Modern Serif";
@@ -4316,11 +4358,7 @@ body {
 <p>
 	I'm Nikki, a theoretical computer scientist and cryptographer.
 
-    Right now, I'm interested in blockchain systems from cryptographic and privacy-based perspectives.
-
-    There are some protocol-design challenges related to MEV which would be ideally solved using cryptography-based solutions, but no satisfactory solutions have been discovered yet. Mid-term approaches to these challenges currently often center around the use of TEE technology, which allow us to bypass the mathematical barriers of establishing provably-private protocols that satisfy our use cases, and achieve those guarantees via hardware-based assumptions instead. As a long-term goal however, the ideal case will be to overcome these barriers via clean (yet to be discovered) provably-private solutions.
-
-    Towards this, I study Blockchain and other MEV systems, both in practice today and via theoretical models, to assess and design new solutions for long-term system sustainability and growth.
+    I focus on research in blockchain systems from cryptographic and privacy-based perspectives. I'm especially interested in strategic scientific communications management.
 
     I enjoy cross-disciplinary work and often explore related fields of theoretical computer science and mathematics for ideas that might inspire bold new directions. I am a proponent of open research, a philosophy of practice that aims to make research more transparent, accessible, and collaborative.
 
@@ -4328,16 +4366,18 @@ body {
 
 <h2>Projects</h2>
 <ul class="skill-list">
-	<li>Countersign: A New Ultra-Private Authentication Protocol for P2P Networks</li>
+	<li> Student perspectives on mathematics in computer science. In Proceedings of the 17th Koli Calling International Conference on Computing Education Research (Koli Calling '17). </li>
+	<li> An Exploration of Grit in a CS1 Context. In Proceedings of the 18th Koli Calling International Conference on Computing Education Research (Koli Calling '18). </li>
+	<li> A Survey-based Exploration of Computer Science Student Perspectives on Mathematics. In Proceedings of the 50th ACM Technical Symposium on Computer Science Education (SIGCSE '19). </li>
+	<li> Countersign: Privacy-Preserving Authentication for P2P Networks. (Pre-print available soon.) </li>
 </ul>
 
 <h2>Current Research Interests</h2>
 
 <ul class="skill-list">
-	<li>Cryptosystem Design &amp; Analysis</li>
-	<li>Proof Systems</li>
-	<li>Witness Encryption</li>
-	<li>Fully Homomorphic Encryption</li>
+	<li> The Universal Composability Framework </li>
+	<li> Cryptographic Idealized Models </li>
+	<li> Proof Systems </li>
 </ul>
 
 <h2>Other General Interests</h2>
@@ -4350,6 +4390,8 @@ body {
 	<li>Independence-Friendly (IF) Logic</li>
 	<li>Hintikka's Game-theoretical Interpretations of First-Order Logic</li>
 	<li>Applications of Universal Composability Framework in and outside of Cryptography</li>
+	<li>Witness Encryption</li>
+	<li>Fully Homomorphic Encryption</li>
 </ul>
 
 <!---
